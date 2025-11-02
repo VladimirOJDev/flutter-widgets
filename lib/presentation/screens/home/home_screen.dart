@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets_app/config/menu/menu_items.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -10,6 +11,55 @@ class HomeScreen extends StatelessWidget {
         title: Text("Widgets + Material 3", textAlign: TextAlign.center,),
         
       ),
+      body: _HomeView(),
+    );
+  }
+}
+
+class _HomeView extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+
+    //Lista scrolleable vertical
+    return ListView.builder(
+      physics: BouncingScrollPhysics(), //Fisica de rebote  scroll por ejemplo rebote
+      padding: EdgeInsets.all(12), //Padding a toda la lista
+      itemCount: appMenuItem.length,
+      itemBuilder:(context,index){
+        final menuItem = appMenuItem[index];
+
+        
+        return _CustomListTitle(menuItem: menuItem);
+      }
+    );
+
+  }
+}
+
+class _CustomListTitle extends StatelessWidget {
+  const _CustomListTitle({
+    required this.menuItem,
+  });
+
+  final MenuItem menuItem;
+
+  @override
+  Widget build(BuildContext context) {
+
+    final colors = Theme.of(context).colorScheme; //Estilos que definimos en el mateerial app en theme
+
+    //El componente ListTitle es un widget que formatea automaticamente
+    // el titile y subtitel y otras propieddades
+
+    return ListTile(
+      leading: Icon(menuItem.icon, color: colors.primary,), //widget que va al inicio antes del titulo y subt
+      trailing: Icon(Icons.arrow_forward_ios_rounded, color: colors.primary,),//widget que va al final pero en la misma linea que el title
+      title: Text(menuItem.titile),
+      subtitle: Text(menuItem.subTutle), 
+      onTap: (){
+        //TODO Navegar a otra pantall
+      },
     );
   }
 } 
