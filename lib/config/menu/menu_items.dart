@@ -28,7 +28,7 @@ List<MenuItem> appMenuItem = [
   MenuItem(
     titile: "Tarjetas",
     subTutle: "Un contenedor estilizado",
-    link: "/card",
+    link: "/cards",
     icon: Icons.credit_card
   )
 ]; 

@@ -58,7 +58,14 @@ class _CustomListTitle extends StatelessWidget {
       title: Text(menuItem.titile),
       subtitle: Text(menuItem.subTutle), 
       onTap: (){
-        //TODO Navegar a otra pantall
+        
+        // Navigator.of(context).push(
+        //   MaterialPageRoute<void>(
+        //     builder: (context) => const ButtonsScreen(),
+        //   ),
+        // );
+
+        Navigator.pushNamed(context, menuItem.link);
       },
     );
   }
