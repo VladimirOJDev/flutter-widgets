@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/menu/menu_items.dart';
+import 'package:widgets_app/presentation/screens/screens.dart';
 
 class HomeScreen extends StatelessWidget {
+
+  static const name = 'home_screen'; //nombre que podemos poner en las rutas, lo llamamos dentro del go router
+
   const HomeScreen({super.key});
 
   @override
@@ -68,7 +72,8 @@ class _CustomListTitle extends StatelessWidget {
 
        // Navigator.pushNamed(context, menuItem.link);
 
-       context.push(menuItem.link);
+       context.push(menuItem.link); //Navegacion por ruta
+       context.pushNamed(CardsScreen.name);//Navegacion por nombre
       },
     );
   }
