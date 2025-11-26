@@ -52,5 +52,11 @@ List<MenuItem> appMenuItem = [
     link: "/animated",
     icon: Icons.check_box_outlined
   ),
+  MenuItem(
+    titile: "Ui controls + Tiles",
+    subTutle: "Serie de controles de flutter",
+    link: "/ui-controls",
+    icon: Icons.check_box_outlined
+  ),
   
 ]; 
