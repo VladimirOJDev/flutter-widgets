@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
 
+//Tipo de variabeles del menu
+
 class MenuItem{
   final String titile;
   final String subTutle;
@@ -18,6 +20,7 @@ class MenuItem{
 
 }
 
+//Listado de widgets que se mostraran en el hoe y sus rutas correspondientes, se usa en el router
 List<MenuItem> appMenuItem = [
   MenuItem(
     titile: "Botones",
@@ -30,5 +33,18 @@ List<MenuItem> appMenuItem = [
     subTutle: "Un contenedor estilizado",
     link: "/cards",
     icon: Icons.credit_card
+  ),
+    MenuItem(
+    titile: "Progress Indicators",
+    subTutle: "Generales y controlados",
+    link: "/progress",
+    icon: Icons.refresh_rounded
+  ),
+    MenuItem(
+    titile: "Tarjetas",
+    subTutle: "Un contenedor estilizado",
+    link: "/cards",
+    icon: Icons.credit_card
   )
+  
 ]; 
