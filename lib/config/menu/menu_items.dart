@@ -58,5 +58,11 @@ List<MenuItem> appMenuItem = [
     link: "/ui-controls",
     icon: Icons.check_box_outlined
   ),
+  MenuItem(
+    titile: "Introduccion  a la aplicacion",
+    subTutle: "Tutorial introductorio",
+    link: "/tutorial",
+    icon: Icons.accessibility_new_rounded
+  ),
   
 ]; 

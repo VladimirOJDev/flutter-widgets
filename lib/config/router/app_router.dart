@@ -46,6 +46,11 @@ final appRouter = GoRouter(
       name: UiControlsScreen.name,
       builder: (context, state) => UiControlsScreen(),
     ),
+    GoRoute(
+      path: '/tutorial',
+      name: TutorialScreen.name,
+      builder: (context, state) => TutorialScreen(),
+    ),
 
   ],
 );
