@@ -47,10 +47,10 @@ List<MenuItem> appMenuItem = [
     icon: Icons.inbox_outlined
   ),
     MenuItem(
-    titile: "Sin confirmar",
-    subTutle: "Sin subtutiel",
-    link: "/cards",
-    icon: Icons.credit_card
+    titile: "Animated container",
+    subTutle: "Statefull widget animado",
+    link: "/animated",
+    icon: Icons.check_box_outlined
   ),
   
 ]; 
