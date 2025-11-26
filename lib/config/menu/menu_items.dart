@@ -40,11 +40,17 @@ List<MenuItem> appMenuItem = [
     link: "/progress",
     icon: Icons.refresh_rounded
   ),
+  MenuItem(
+    titile: "SnackaBars y diálogos",
+    subTutle: "Indicadores en pantalla",
+    link: "/snackbars",
+    icon: Icons.inbox_outlined
+  ),
     MenuItem(
-    titile: "Tarjetas",
-    subTutle: "Un contenedor estilizado",
+    titile: "Sin confirmar",
+    subTutle: "Sin subtutiel",
     link: "/cards",
     icon: Icons.credit_card
-  )
+  ),
   
 ]; 
