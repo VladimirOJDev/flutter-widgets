@@ -64,5 +64,11 @@ List<MenuItem> appMenuItem = [
     link: "/tutorial",
     icon: Icons.accessibility_new_rounded
   ),
+  MenuItem(
+    titile: "InfiniteScroll y Pull",
+    subTutle: "Listas infinitas y  pull to refresh",
+    link: "/infitineScroll",
+    icon: Icons.refresh_outlined
+  ),
   
 ]; 
