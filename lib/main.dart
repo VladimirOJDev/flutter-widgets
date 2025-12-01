@@ -17,7 +17,6 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: AppTheme(selectColor: 1).getTheme(),
       
-
     ); 
   }
 }
