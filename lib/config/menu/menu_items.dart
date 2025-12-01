@@ -23,6 +23,12 @@ class MenuItem{
 //Listado de widgets que se mostraran en el hoe y sus rutas correspondientes, se usa en el router
 List<MenuItem> appMenuItem = [
   MenuItem(
+    titile: "Contador",
+    subTutle: "Contador y estado en riverpod",
+    link: "/counter",
+    icon: Icons.add
+  ),
+  MenuItem(
     titile: "Botones",
     subTutle: "Varios botones en flutter",
     link: "/buttons",
@@ -70,5 +76,6 @@ List<MenuItem> appMenuItem = [
     link: "/infitineScroll",
     icon: Icons.refresh_outlined
   ),
+
   
 ]; 
