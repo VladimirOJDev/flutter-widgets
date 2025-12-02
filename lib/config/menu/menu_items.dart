@@ -76,6 +76,12 @@ List<MenuItem> appMenuItem = [
     link: "/infitineScroll",
     icon: Icons.refresh_outlined
   ),
+  MenuItem(
+    titile: "Cambiar de tema",
+    subTutle: "Cambiar el tema de la aplicación",
+    link: "/theme-changer",
+    icon: Icons.color_lens_outlined
+  ),
 
   
 ]; 

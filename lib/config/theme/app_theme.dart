@@ -17,19 +17,22 @@ const List<Color> colorList = [
 ]; 
 
 
-
+//clase que regresa un Apptheme
 class AppTheme {
 
-  final  int selectColor;
+  final int selectColor;
+  final bool isDarkMode;
 
   AppTheme({
+    this.isDarkMode =false,
     this.selectColor = 0
   }):assert(selectColor>=0, 'Debe ser un nuemro positivo');
 
   ThemeData getTheme()=>ThemeData(
-    useMaterial3: true,
-    colorSchemeSeed: colorList[selectColor],
-    appBarTheme: AppBarTheme(
+    useMaterial3: true,                                             //Usa material 3
+    brightness: isDarkMode? Brightness.dark:Brightness.light,      //Modo oscuro/claro
+    colorSchemeSeed: colorList[selectColor],                       //Color principal de la aplicacion
+    appBarTheme: AppBarTheme(                                      //Los AppBar siempre se central
       centerTitle: true,
     )
 
