@@ -26,6 +26,7 @@ class AppTheme {
   AppTheme({
     this.isDarkMode =false,
     this.selectColor = 0
+    
   }):assert(selectColor>=0, 'Debe ser un nuemro positivo');
 
   ThemeData getTheme()=>ThemeData(
@@ -36,5 +37,15 @@ class AppTheme {
       centerTitle: true,
     )
 
+  );
+
+
+  //Hace una copia del AppTheme, sirve para mantener las propiedades inmutables creando un nuevo estado
+  AppTheme copyWith({
+    int? selectColor,
+    bool? isDarkMode,
+  })=>AppTheme(
+    selectColor: selectColor?? this.selectColor,
+    isDarkMode: isDarkMode?? this.isDarkMode,
   );
 }
