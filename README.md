@@ -1,3 +1,8 @@
 # widgets_app
 
-A new Flutter project.
+Instalacion y ejecución
+
+Asegúrate de tener el SDK de Flutter instalado y configurado antes de proceder.
+
+
+
